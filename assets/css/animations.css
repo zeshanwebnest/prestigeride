@@ -1,0 +1,195 @@
+/* ==========================================================================
+   AURELINE — Animations
+   Reveal-on-scroll, parallax, floating elements, hero keyframes.
+   Disabled entirely under prefers-reduced-motion (see base.css).
+   ========================================================================== */
+
+/* ---- Reveal on scroll (paired with IntersectionObserver in animations.js) ---- */
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity var(--duration-slow) var(--ease-premium),
+    transform var(--duration-slow) var(--ease-premium);
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-reveal="fade"] {
+  transform: none;
+}
+
+[data-reveal="zoom"] {
+  transform: scale(0.94);
+}
+
+[data-reveal="zoom"].is-visible {
+  transform: scale(1);
+}
+
+[data-reveal-delay="1"] {
+  transition-delay: 90ms;
+}
+
+[data-reveal-delay="2"] {
+  transition-delay: 180ms;
+}
+
+[data-reveal-delay="3"] {
+  transition-delay: 270ms;
+}
+
+[data-reveal-delay="4"] {
+  transition-delay: 360ms;
+}
+
+/* ---- Parallax hero media ---- */
+
+[data-parallax] {
+  will-change: transform;
+}
+
+/* ---- Floating decorative elements ---- */
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+.floating {
+  animation: float 6s var(--ease-premium) infinite;
+}
+
+.floating--delay {
+  animation-delay: 1.5s;
+}
+
+/* ---- Hero entrance ---- */
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero__eyebrow {
+  animation: heroFadeUp var(--duration-slow) var(--ease-premium) both;
+}
+
+.hero__title {
+  animation: heroFadeUp var(--duration-slow) var(--ease-premium) 120ms both;
+}
+
+.hero__desc {
+  animation: heroFadeUp var(--duration-slow) var(--ease-premium) 240ms both;
+}
+
+.hero__actions {
+  animation: heroFadeUp var(--duration-slow) var(--ease-premium) 360ms both;
+}
+
+.hero__trust {
+  animation: heroFadeUp var(--duration-slow) var(--ease-premium) 480ms both;
+}
+
+/* ---- Marquee (partner / trust strip) ---- */
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee__track {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+
+/* ---- Gold underline draw-in ---- */
+
+@keyframes drawLine {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.underline-draw {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-draw::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: var(--gold);
+  transform-origin: left;
+  animation: drawLine 1s var(--ease-premium) 600ms both;
+}
+
+/* ---- Counter pulse (subtle, when count finishes) ---- */
+
+@keyframes countPop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.stat__num.is-done {
+  animation: countPop 320ms var(--ease-premium);
+}
+
+/* ---- Page transition fade-in (progressive enhancement) ---- */
+
+body {
+  animation: pageFadeIn 500ms var(--ease-premium);
+}
+
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+  .floating,
+  .marquee__track {
+    animation: none;
+  }
+}

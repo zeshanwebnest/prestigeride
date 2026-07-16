@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Airport Transfers — Aureline Chauffeured Travel</title>
+  <meta name="description" content="Flight-tracked airport transfers with meet-and-greet arrivals and a complimentary 60-minute wait — serving every major terminal Aureline covers." />
+  <link rel="canonical" href="airport-transfers.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="announcement-bar" role="note">
+    Complimentary first-ride upgrade with code <strong>ARRIVE</strong> — <a href="contact.html">Reserve now</a>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="index.html" class="nav__logo">AURELINE<span>.</span></a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav__links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="fleet.html">Fleet</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <div class="nav__links-extra">
+          <a href="tel:+18005551234">+1 (800) 555-1234</a>
+          <a href="contact.html" class="btn btn--primary">Book Now</a>
+        </div>
+      </div>
+      <div class="nav__actions">
+        <a href="tel:+18005551234" class="fs-sm">+1 (800) 555-1234</a>
+        <a href="contact.html" class="btn btn--dark btn--sm">Book Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section style="position:relative; min-height:56vh; display:flex; align-items:flex-end; overflow:hidden; background:var(--black);">
+      <div style="position:absolute; inset:0;">
+        <img src="https://images.unsplash.com/photo-1758531491352-7887c1fe45b3?q=80&w=2000&auto=format&fit=crop" alt="Modern airport terminal interior" data-parallax="0.15" style="width:100%; height:132%; object-fit:cover; opacity:0.6;" />
+        <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(10,10,10,0.35) 0%, rgba(10,10,10,0.9) 100%);"></div>
+      </div>
+      <div class="container" style="position:relative; z-index:1; padding-top:var(--space-10); padding-bottom:var(--space-8); color:var(--white);">
+        <nav class="breadcrumb" aria-label="Breadcrumb" style="color:var(--gray-400); margin-bottom:var(--space-5);">
+          <a href="index.html" style="color:var(--gray-400);">Home</a>
+          <span class="breadcrumb__sep">/</span>
+          <a href="services.html" style="color:var(--gray-400);">Services</a>
+          <span class="breadcrumb__sep">/</span>
+          <span class="breadcrumb__current" style="color:var(--white);">Airport Transfers</span>
+        </nav>
+        <p class="eyebrow" style="color:var(--gold-light);">Service 01</p>
+        <h1 style="color:var(--white); max-width:18ch;">Airport Transfers, Timed to Your Flight</h1>
+        <p style="color:var(--gray-300); font-size:var(--fs-lg); max-width:44ch; margin-top:var(--space-5);">Meet-and-greet arrivals, real-time flight tracking, and a complimentary 60-minute wait — at every terminal we serve.</p>
+        <a href="contact.html" class="btn btn--primary btn--lg" style="margin-top:var(--space-7);">Reserve a Transfer</a>
+      </div>
+    </section>
+
+    <!-- ================= KEY BENEFITS ================= -->
+    <section class="section" aria-labelledby="benefits-heading">
+      <div class="container">
+        <div class="section-header section-header--center" data-reveal>
+          <p class="eyebrow">Key Benefits</p>
+          <h2 id="benefits-heading">Built for the Way Flights Actually Go</h2>
+        </div>
+        <div class="grid grid--4">
+          <div class="service-card" data-reveal data-reveal-delay="1">
+            <div class="service-card__icon" aria-hidden="true">✈</div>
+            <h3>Live Flight Tracking</h3>
+            <p>Your chauffeur is notified automatically of delays, early arrivals, and gate changes.</p>
+          </div>
+          <div class="service-card" data-reveal data-reveal-delay="2">
+            <div class="service-card__icon" aria-hidden="true">◆</div>
+            <h3>Meet &amp; Greet</h3>
+            <p>Your chauffeur waits at arrivals with a name sign, ready to assist with luggage.</p>
+          </div>
+          <div class="service-card" data-reveal data-reveal-delay="3">
+            <div class="service-card__icon" aria-hidden="true">◷</div>
+            <h3>60-Minute Free Wait</h3>
+            <p>Complimentary wait time on international arrivals — no fee for a slow customs line.</p>
+          </div>
+          <div class="service-card" data-reveal data-reveal-delay="4">
+            <div class="service-card__icon" aria-hidden="true">✦</div>
+            <h3>Terminal Specialists</h3>
+            <p>Chauffeurs trained on the fastest curbside routes for each specific terminal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HOW IT WORKS ================= -->
+    <section class="section section--alt" aria-labelledby="how-heading">
+      <div class="container">
+        <div class="section-header section-header--center" data-reveal>
+          <p class="eyebrow">How It Works</p>
+          <h2 id="how-heading">From Landing to Curb</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline__step" data-reveal data-reveal-delay="1">
+            <h3 style="font-size:var(--fs-lg); margin-bottom:var(--space-2);">Share Your Flight</h3>
+            <p>Give us your flight number when booking — we handle the tracking from there.</p>
+          </div>
+          <div class="timeline__step" data-reveal data-reveal-delay="2">
+            <h3 style="font-size:var(--fs-lg); margin-bottom:var(--space-2);">We Adjust Automatically</h3>
+            <p>Delays or early landings shift your pickup time without you lifting a finger.</p>
+          </div>
+          <div class="timeline__step" data-reveal data-reveal-delay="3">
+            <h3 style="font-size:var(--fs-lg); margin-bottom:var(--space-2);">Meet at Arrivals</h3>
+            <p>Your chauffeur is waiting past baggage claim with a name sign and a ready car.</p>
+          </div>
+          <div class="timeline__step" data-reveal data-reveal-delay="4">
+            <h3 style="font-size:var(--fs-lg); margin-bottom:var(--space-2);">Direct to Destination</h3>
+            <p>Climate pre-set, route planned around current traffic and roadwork.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= AIRPORTS SERVED ================= -->
+    <section class="section" aria-labelledby="airports-heading">
+      <div class="container">
+        <div class="section-header section-header--center" data-reveal>
+          <p class="eyebrow">Coverage</p>
+          <h2 id="airports-heading">Airports We Serve</h2>
+        </div>
+        <div class="flex-center" style="gap:var(--space-4); flex-wrap:wrap;" data-reveal>
+          <span class="badge">JFK — New York</span>
+          <span class="badge">LGA — New York</span>
+          <span class="badge">EWR — Newark</span>
+          <span class="badge">LAX — Los Angeles</span>
+          <span class="badge">MIA — Miami</span>
+          <span class="badge">ORD — Chicago</span>
+          <span class="badge">DCA — Washington</span>
+          <span class="badge">IAD — Washington</span>
+          <span class="badge">BOS — Boston</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RECOMMENDED FLEET ================= -->
+    <section class="section section--alt" aria-labelledby="fleet-heading">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <p class="eyebrow">Recommended Vehicles</p>
+          <h2 id="fleet-heading">Best Suited for Airport Runs</h2>
+        </div>
+        <div class="grid grid--3">
+          <article class="fleet-card" data-reveal data-reveal-delay="1">
+            <div class="fleet-card__media"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800&auto=format&fit=crop" alt="Business sedan" loading="lazy" /></div>
+            <div class="fleet-card__body">
+              <h3 style="font-size:var(--fs-lg);">Business Sedan</h3>
+              <div class="fleet-card__meta"><span>3 Passengers</span><span>2 Luggage</span></div>
+            </div>
+          </article>
+          <article class="fleet-card" data-reveal data-reveal-delay="2">
+            <div class="fleet-card__media"><img src="https://images.unsplash.com/photo-1767749995450-7b63ab7cd4fd?q=80&w=800&auto=format&fit=crop" alt="Luxury SUV" loading="lazy" /></div>
+            <div class="fleet-card__body">
+              <h3 style="font-size:var(--fs-lg);">Luxury SUV</h3>
+              <div class="fleet-card__meta"><span>5 Passengers</span><span>4 Luggage</span></div>
+            </div>
+          </article>
+          <article class="fleet-card" data-reveal data-reveal-delay="3">
+            <div class="fleet-card__media"><img src="https://images.unsplash.com/photo-1758223725140-3855ec687a16?q=80&w=800&auto=format&fit=crop" alt="Executive sprinter van" loading="lazy" /></div>
+            <div class="fleet-card__body">
+              <h3 style="font-size:var(--fs-lg);">Executive Sprinter</h3>
+              <div class="fleet-card__meta"><span>12 Passengers</span><span>10 Luggage</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section text-center" aria-labelledby="cta-heading">
+      <div class="container container--narrow">
+        <p class="eyebrow" style="justify-content:center;" data-reveal>Landing Soon?</p>
+        <h2 id="cta-heading" data-reveal>Book Your Transfer Before You Board.</h2>
+        <div data-reveal style="margin-top:var(--space-7);">
+          <a href="contact.html" class="btn btn--dark btn--lg">Reserve a Transfer</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo">AURELINE<span>.</span></a>
+          <p>Private chauffeur service for airport transfers, corporate travel, events, and hourly hire — in 40+ cities.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Aureline on Instagram">IG</a>
+            <a href="#" aria-label="Aureline on Facebook">FB</a>
+            <a href="#" aria-label="Aureline on X">X</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Company</h3>
+          <div class="footer__links">
+            <a href="about.html">About</a>
+            <a href="fleet.html">Fleet</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Services</h3>
+          <div class="footer__links">
+            <a href="airport-transfers.html" aria-current="page">Airport Transfers</a>
+            <a href="corporate-travel.html">Corporate Travel</a>
+            <a href="events.html">Events</a>
+            <a href="hourly-chauffeur.html">Hourly Chauffeur</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Support</h3>
+          <div class="footer__links">
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Booking Help</a>
+            <a href="tel:+18005551234">+1 (800) 555-1234</a>
+            <a href="mailto:concierge@aureline.example">concierge@aureline.example</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="current-year">2026</span> Aureline. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cancellation Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-cta-bar">
+    <a href="contact.html" class="btn btn--primary">Book Now</a>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/animations.js" defer></script>
+  <script src="assets/js/components.js" defer></script>
+</body>
+</html>

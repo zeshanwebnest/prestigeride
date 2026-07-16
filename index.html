@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AURELINE — Chauffeured Travel, Perfected</title>
+  <meta name="description" content="AURELINE is a private chauffeur service for airport transfers, corporate travel, events, and hourly hire — precision, discretion, and an impeccable fleet in every city we serve." />
+  <link rel="canonical" href="index.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AURELINE — Chauffeured Travel, Perfected" />
+  <meta property="og:description" content="Private chauffeur service for airport transfers, corporate travel, events, and hourly hire." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= ANNOUNCEMENT BAR ================= -->
+  <div class="announcement-bar" role="note">
+    Complimentary first-ride upgrade with code <strong>ARRIVE</strong> — <a href="contact.html">Reserve now</a>
+  </div>
+
+  <!-- ================= HEADER / NAV ================= -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="index.html" class="nav__logo">AURELINE<span>.</span></a>
+
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav__links" id="nav-links">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="fleet.html">Fleet</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <div class="nav__links-extra">
+          <a href="tel:+18005551234">+1 (800) 555-1234</a>
+          <a href="contact.html" class="btn btn--primary">Book Now</a>
+        </div>
+      </div>
+
+      <div class="nav__actions">
+        <a href="tel:+18005551234" class="fs-sm">+1 (800) 555-1234</a>
+        <a href="contact.html" class="btn btn--dark btn--sm">Book Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" style="position:relative; min-height:92vh; display:flex; align-items:flex-end; overflow:hidden; background:var(--black);">
+      <div style="position:absolute; inset:0; overflow:hidden;">
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2000&auto=format&fit=crop"
+             alt="Black luxury sedan driving through a city at dusk"
+             data-parallax="0.18"
+             style="width:100%; height:132%; object-fit:cover; opacity:0.65;" />
+        <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(10,10,10,0.35) 0%, rgba(10,10,10,0.55) 55%, rgba(10,10,10,0.92) 100%);"></div>
+      </div>
+
+      <div class="container" style="position:relative; z-index:1; padding-top:var(--space-11); padding-bottom: var(--space-10); color:var(--white);">
+        <p class="eyebrow hero__eyebrow" style="color:var(--gold-light);">Prestige Chauffeured Travel</p>
+        <h1 class="hero__title" style="max-width:16ch; color:var(--white); margin-bottom:var(--space-6);">The Art of Arriving.</h1>
+        <p class="hero__desc" style="max-width:46ch; font-size:var(--fs-lg); color:var(--gray-300); margin-bottom:var(--space-7);">
+          Vetted chauffeurs, an impeccable fleet, and fixed transparent pricing — for the moments where how you arrive matters as much as where.
+        </p>
+        <div class="hero__actions flex" style="gap:var(--space-4); flex-wrap:wrap; margin-bottom:var(--space-9);">
+          <a href="contact.html" class="btn btn--primary btn--lg">Reserve Your Chauffeur</a>
+          <a href="fleet.html" class="btn btn--outline-light btn--lg">View Fleet</a>
+        </div>
+
+        <div class="hero__trust flex" style="gap:var(--space-8); flex-wrap:wrap; border-top:1px solid var(--color-border-dark); padding-top:var(--space-6);">
+          <div>
+            <div style="color:var(--gold); letter-spacing:3px; font-size:var(--fs-base);">★★★★★</div>
+            <p style="color:var(--gray-400); font-size:var(--fs-sm); margin-top:var(--space-1);">4.9 average, 2,400+ rides</p>
+          </div>
+          <div>
+            <div class="stat__num" style="font-size:var(--fs-xl); justify-content:flex-start;" data-counter="12">0</div>
+            <p style="color:var(--gray-400); font-size:var(--fs-sm); margin-top:var(--space-1);">Years in service</p>
+          </div>
+          <div>
+            <div class="stat__num" style="font-size:var(--fs-xl); justify-content:flex-start;" data-counter="40" data-counter-suffix="+">0</div>
+            <p style="color:var(--gray-400); font-size:var(--fs-sm); margin-top:var(--space-1);">Cities served</p>
+          </div>
+          <div>
+            <div class="stat__num" style="font-size:var(--fs-xl); justify-content:flex-start;" data-counter="85" data-counter-suffix="+">0</div>
+            <p style="color:var(--gray-400); font-size:var(--fs-sm); margin-top:var(--space-1);">Vehicles in fleet</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TRUST STRIP ================= -->
+    <section class="section--sm" aria-label="Trusted by">
+      <div class="container">
+        <p class="text-center" style="font-size:var(--fs-xs); letter-spacing:var(--ls-wider); text-transform:uppercase; color:var(--gray-500); margin-bottom:var(--space-6);">
+          Trusted for journeys that cannot go wrong
+        </p>
+        <div class="flex-center" style="gap:var(--space-6); flex-wrap:wrap;">
+          <span class="badge">Fortune 500 Executives</span>
+          <span class="badge">Global Airline Partners</span>
+          <span class="badge">Five-Star Hospitality Groups</span>
+          <span class="badge">Private Equity &amp; Finance</span>
+          <span class="badge">Diplomatic &amp; Government</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FLEET SHOWCASE ================= -->
+    <section class="section section--alt" id="fleet" aria-labelledby="fleet-heading">
+      <div class="container">
+        <div class="flex-between" style="align-items:flex-end; flex-wrap:wrap; gap:var(--space-5);">
+          <div class="section-header" data-reveal style="margin-bottom:0;">
+            <p class="eyebrow">Our Fleet</p>
+            <h2 id="fleet-heading">A Fleet Built for Presence</h2>
+            <p>Every vehicle is under five years old, detailed before each reservation, and driven by a chauffeur trained to your standard, not just the road's.</p>
+          </div>
+          <a href="fleet.html" class="btn--ghost" data-reveal>View Full Fleet</a>
+        </div>
+
+        <div class="grid grid--4" style="margin-top:var(--space-8);">
+          <article class="fleet-card" data-reveal data-reveal-delay="1">
+            <div class="fleet-card__media">
+              <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800&auto=format&fit=crop" alt="Business sedan" loading="lazy" />
+            </div>
+            <div class="fleet-card__body">
+              <span class="badge badge--dark">Executive</span>
+              <h3 style="margin-top:var(--space-4); font-size:var(--fs-lg);">Business Sedan</h3>
+              <div class="fleet-card__meta">
+                <span>3 Passengers</span>
+                <span>2 Luggage</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="fleet-card" data-reveal data-reveal-delay="2">
+            <div class="fleet-card__media">
+              <img src="https://images.unsplash.com/photo-1767749995450-7b63ab7cd4fd?q=80&w=800&auto=format&fit=crop" alt="Luxury SUV" loading="lazy" />
+            </div>
+            <div class="fleet-card__body">
+              <span class="badge badge--dark">Premium</span>
+              <h3 style="margin-top:var(--space-4); font-size:var(--fs-lg);">Luxury SUV</h3>
+              <div class="fleet-card__meta">
+                <span>5 Passengers</span>
+                <span>4 Luggage</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="fleet-card" data-reveal data-reveal-delay="3">
+            <div class="fleet-card__media">
+              <img src="https://images.unsplash.com/photo-1736572199225-e8dc0a233faf?q=80&w=800&auto=format&fit=crop" alt="Executive limousine" loading="lazy" />
+            </div>
+            <div class="fleet-card__body">
+              <span class="badge badge--dark">Signature</span>
+              <h3 style="margin-top:var(--space-4); font-size:var(--fs-lg);">Executive Limousine</h3>
+              <div class="fleet-card__meta">
+                <span>3 Passengers</span>
+                <span>3 Luggage</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="fleet-card" data-reveal data-reveal-delay="4">
+            <div class="fleet-card__media">
+              <img src="https://images.unsplash.com/photo-1758223725140-3855ec687a16?q=80&w=800&auto=format&fit=crop" alt="Executive sprinter van" loading="lazy" />
+            </div>
+            <div class="fleet-card__body">
+              <span class="badge badge--dark">Group</span>
+              <h3 style="margin-top:var(--space-4); font-size:var(--fs-lg);">Executive Sprinter</h3>
+              <div class="fleet-card__meta">
+                <span>12 Passengers</span>
+                <span>10 Luggage</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHY CHOOSE US ================= -->
+    <section class="section section--dark" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="grid grid--2" style="gap:var(--space-9); align-items:start;">
+          <div data-reveal>
+            <div class="section-header" style="margin-bottom:0;">
+              <p class="eyebrow">Why Choose Aureline</p>
+              <h2 id="why-heading">Precision Is the Whole Point</h2>
+              <p>We built Aureline around the details that other services treat as optional — because for the people we serve, they never are.</p>
+            </div>
+            <div style="margin-top:var(--space-8); border-radius:var(--radius-lg); overflow:hidden; aspect-ratio:4/5;">
+              <img src="https://images.unsplash.com/photo-1611448746128-7c39e03b71e4?q=80&w=900&auto=format&fit=crop" alt="Chauffeur standing beside a luxury vehicle" loading="lazy" style="width:100%; height:100%; object-fit:cover;" />
+            </div>
+          </div>
+
+          <div>
+            <div class="feature-card" data-reveal>
+              <span class="feature-card__num">01</span>
+              <h3 style="font-size:var(--fs-lg); margin-bottom:var(--space-2);">Vetted, Trained Chauffeurs</h3>
+              <p>Background-checked, defensive-driving certified, and trained in the quiet professionalism executive travel demands.</p>
+            </div>
+            <div class="feature-card" data-reveal data-reveal-delay="1">
+              <span class="feature-card__num">02</span>
+              <h3 style="font-size:var(--fs-lg); margin-bottom:var(--space-2);">Live Flight &amp; Route Tracking</h3>
+              <p>We track your flight in real time and adjust pickup automatically — no delay ever costs you a wait.</p>
+            </div>
+            <div class="feature-card" data-reveal data-reveal-delay="2">
+              <span class="feature-card__num">03</span>
+              <h3 style="font-size:var(--fs-lg); margin-bottom:var(--space-2);">Fixed, Transparent Pricing</h3>
+              <p>Your fare is confirmed at booking. No surge, no surprise tolls, no ambiguity on the receipt.</p>
+            </div>
+            <div class="feature-card" data-reveal data-reveal-delay="3" style="border-bottom:1px solid var(--color-border-dark);">
+              <span class="feature-card__num">04</span>
+              <h3 style="font-size:var(--fs-lg); margin-bottom:var(--space-2);">24/7 Concierge Support</h3>
+              <p>A real person, always reachable, for the itinerary change that happens at 11pm the night before.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="section" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header section-header--center" data-reveal>
+          <p class="eyebrow">Services</p>
+          <h2 id="services-heading">Built Around How You Move</h2>
+          <p>Four service lines, one standard of execution.</p>
+        </div>
+
+        <div class="grid grid--4">
+          <div class="service-card" data-reveal data-reveal-delay="1">
+            <div class="service-card__icon" aria-hidden="true">✈</div>
+            <h3>Airport Transfers</h3>
+            <p>Flight-tracked pickups and meet-and-greet arrivals at every major terminal.</p>
+            <a href="airport-transfers.html" class="btn--ghost">Learn More</a>
+          </div>
+          <div class="service-card" data-reveal data-reveal-delay="2">
+            <div class="service-card__icon" aria-hidden="true">◆</div>
+            <h3>Corporate Travel</h3>
+            <p>Centralized billing and dedicated accounts for teams that travel often.</p>
+            <a href="corporate-travel.html" class="btn--ghost">Learn More</a>
+          </div>
+          <div class="service-card" data-reveal data-reveal-delay="3">
+            <div class="service-card__icon" aria-hidden="true">✦</div>
+            <h3>Events</h3>
+            <p>Weddings, galas, and premieres — coordinated fleets with a single point of contact.</p>
+            <a href="events.html" class="btn--ghost">Learn More</a>
+          </div>
+          <div class="service-card" data-reveal data-reveal-delay="4">
+            <div class="service-card__icon" aria-hidden="true">◷</div>
+            <h3>Hourly Chauffeur</h3>
+            <p>Your car and driver, on retainer for the day — wait, go, wait again.</p>
+            <a href="hourly-chauffeur.html" class="btn--ghost">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED DESTINATIONS ================= -->
+    <section class="section section--alt" aria-labelledby="destinations-heading">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <p class="eyebrow">Featured Destinations</p>
+          <h2 id="destinations-heading">Where We Meet You</h2>
+          <p>Full-service coverage in every major metro and airport corridor — with more added each quarter.</p>
+        </div>
+
+        <div class="grid grid--4">
+          <a class="card" href="airport-transfers.html" data-reveal data-reveal-delay="1" style="text-decoration:none;">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1531819177115-428566ccfb50?q=80&w=800&auto=format&fit=crop" alt="New York City skyline at night" loading="lazy" />
+            </div>
+            <div class="card__body">
+              <h3 style="font-size:var(--fs-lg);">New York</h3>
+              <p style="font-size:var(--fs-sm); margin-top:var(--space-2);">JFK · LGA · EWR coverage</p>
+            </div>
+          </a>
+          <a class="card" href="airport-transfers.html" data-reveal data-reveal-delay="2" style="text-decoration:none;">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1605702012553-e954fbde66eb?q=80&w=800&auto=format&fit=crop" alt="Los Angeles skyline at dusk" loading="lazy" />
+            </div>
+            <div class="card__body">
+              <h3 style="font-size:var(--fs-lg);">Los Angeles</h3>
+              <p style="font-size:var(--fs-sm); margin-top:var(--space-2);">LAX · Studio &amp; event routes</p>
+            </div>
+          </a>
+          <a class="card" href="airport-transfers.html" data-reveal data-reveal-delay="3" style="text-decoration:none;">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1599939571322-792a326991f2?q=80&w=800&auto=format&fit=crop" alt="Miami skyline at night" loading="lazy" />
+            </div>
+            <div class="card__body">
+              <h3 style="font-size:var(--fs-lg);">Miami</h3>
+              <p style="font-size:var(--fs-sm); margin-top:var(--space-2);">MIA · Waterfront &amp; resort transfers</p>
+            </div>
+          </a>
+          <a class="card" href="airport-transfers.html" data-reveal data-reveal-delay="4" style="text-decoration:none;">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1473116519190-356a1463fbcf?q=80&w=800&auto=format&fit=crop" alt="Washington D.C. skyline" loading="lazy" />
+            </div>
+            <div class="card__body">
+              <h3 style="font-size:var(--fs-lg);">Washington, D.C.</h3>
+              <p style="font-size:var(--fs-sm); margin-top:var(--space-2);">IAD · DCA · Diplomatic circuit</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BOOKING PROCESS ================= -->
+    <section class="section" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="section-header section-header--center" data-reveal>
+          <p class="eyebrow">How It Works</p>
+          <h2 id="process-heading">Booking Process</h2>
+          <p>From request to reflection, in four unhurried steps.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__step" data-reveal data-reveal-delay="1">
+            <h3 style="font-size:var(--fs-lg); margin-bottom:var(--space-2);">Request</h3>
+            <p>Tell us your route, timing, and vehicle preference — online or by phone, in under a minute.</p>
+          </div>
+          <div class="timeline__step" data-reveal data-reveal-delay="2">
+            <h3 style="font-size:var(--fs-lg); margin-bottom:var(--space-2);">Confirm</h3>
+            <p>Receive your chauffeur's name, photo, and vehicle details, with a fixed fare, in minutes.</p>
+          </div>
+          <div class="timeline__step" data-reveal data-reveal-delay="3">
+            <h3 style="font-size:var(--fs-lg); margin-bottom:var(--space-2);">Ride</h3>
+            <p>Track your vehicle live and step into a car that was detailed and ready before you arrived.</p>
+          </div>
+          <div class="timeline__step" data-reveal data-reveal-delay="4">
+            <h3 style="font-size:var(--fs-lg); margin-bottom:var(--space-2);">Reflect</h3>
+            <p>A digital receipt and a two-tap rebooking for the next time precision matters.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STATS ================= -->
+    <section class="section section--dark" aria-label="Company statistics">
+      <div class="container">
+        <div class="stats">
+          <div data-reveal>
+            <div class="stat__num" data-counter="12">0</div>
+            <p class="stat__label">Years in Service</p>
+          </div>
+          <div data-reveal data-reveal-delay="1">
+            <div class="stat__num" data-counter="42" data-counter-suffix="+">0</div>
+            <p class="stat__label">Cities Served</p>
+          </div>
+          <div data-reveal data-reveal-delay="2">
+            <div class="stat__num" data-counter="85" data-counter-suffix="+">0</div>
+            <p class="stat__label">Vehicles in Fleet</p>
+          </div>
+          <div data-reveal data-reveal-delay="3">
+            <div class="stat__num" data-counter="98" data-counter-suffix="%">0</div>
+            <p class="stat__label">On-Time Rate</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="section section--alt" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header section-header--center" data-reveal>
+          <p class="eyebrow">Testimonials</p>
+          <h2 id="testimonials-heading">In Their Own Words</h2>
+        </div>
+
+        <div data-carousel style="overflow:hidden;" data-reveal>
+          <div data-carousel-track style="display:flex; transition: transform 600ms var(--ease-premium);">
+            <div style="min-width:100%;">
+              <div class="grid grid--3">
+                <div class="testimonial-card">
+                  <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+                  <p class="testimonial-card__quote">"Every handoff was seamless — flight delays included. It's the first car service that's made me stop thinking about the logistics entirely."</p>
+                  <div class="testimonial-card__author">
+                    <div class="testimonial-card__avatar"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&auto=format&fit=crop" alt="" loading="lazy" /></div>
+                    <div>
+                      <div class="testimonial-card__name">Marcus Whitfield</div>
+                      <div class="testimonial-card__role">Managing Partner, Whitfield Capital</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-card">
+                  <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+                  <p class="testimonial-card__quote">"We moved our entire executive team's ground travel to Aureline last year. Billing alone saved our office manager hours a month."</p>
+                  <div class="testimonial-card__author">
+                    <div class="testimonial-card__avatar"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop" alt="" loading="lazy" /></div>
+                    <div>
+                      <div class="testimonial-card__name">Elena Vasquez</div>
+                      <div class="testimonial-card__role">COO, Meridian Health Group</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-card">
+                  <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+                  <p class="testimonial-card__quote">"Booked a fleet for our wedding with ten days' notice. Every car arrived early, every driver in uniform. Genuinely flawless."</p>
+                  <div class="testimonial-card__author">
+                    <div class="testimonial-card__avatar"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop" alt="" loading="lazy" /></div>
+                    <div>
+                      <div class="testimonial-card__name">Daniel Osei</div>
+                      <div class="testimonial-card__role">Private Client</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="min-width:100%;">
+              <div class="grid grid--3">
+                <div class="testimonial-card">
+                  <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+                  <p class="testimonial-card__quote">"The concierge answered at midnight to move a pickup by two hours. That kind of responsiveness is rare and it's why we keep coming back."</p>
+                  <div class="testimonial-card__author">
+                    <div class="testimonial-card__avatar"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&auto=format&fit=crop" alt="" loading="lazy" /></div>
+                    <div>
+                      <div class="testimonial-card__name">Priya Nair</div>
+                      <div class="testimonial-card__role">Head of Events, Solene Hotels</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-card">
+                  <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+                  <p class="testimonial-card__quote">"Fixed pricing sold me. No more guessing what an airport run costs at 6am on a holiday. It's the same fare, every time."</p>
+                  <div class="testimonial-card__author">
+                    <div class="testimonial-card__avatar"><img src="https://images.unsplash.com/photo-1676989880361-091e12efc056?q=80&w=200&auto=format&fit=crop" alt="" loading="lazy" /></div>
+                    <div>
+                      <div class="testimonial-card__name">Julian Ferro</div>
+                      <div class="testimonial-card__role">Touring Manager</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-card">
+                  <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+                  <p class="testimonial-card__quote">"The cars are as good as advertised, but it's the chauffeurs who make the service — quiet, sharp, and always exactly on time."</p>
+                  <div class="testimonial-card__author">
+                    <div class="testimonial-card__avatar"><img src="https://images.unsplash.com/photo-1614786269829-d24616faf56d?q=80&w=200&auto=format&fit=crop" alt="" loading="lazy" /></div>
+                    <div>
+                      <div class="testimonial-card__name">Sophie Laurent</div>
+                      <div class="testimonial-card__role">Private Client</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-center" style="gap:var(--space-3); margin-top:var(--space-7);" data-carousel-dots></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COMPANY STORY ================= -->
+    <section class="section" aria-labelledby="story-heading">
+      <div class="container">
+        <div class="grid grid--2" style="gap:var(--space-9); align-items:center;">
+          <div data-reveal data-reveal="zoom" style="border-radius:var(--radius-xl); overflow:hidden;">
+            <img src="https://images.unsplash.com/photo-1432462770865-65b70566d673?q=80&w=1000&auto=format&fit=crop" alt="Interior detail of a luxury chauffeured vehicle" loading="lazy" style="width:100%; height:100%; object-fit:cover;" />
+          </div>
+          <div data-reveal>
+            <p class="eyebrow">Our Story</p>
+            <h2>Founded on a <span class="underline-draw">Single Complaint</span></h2>
+            <p style="font-size:var(--fs-lg); margin-top:var(--space-5); line-height:var(--lh-relaxed);">
+              Aureline began in 2013 after our founder, a frequent business traveler, missed a closing meeting because a "luxury" car service sent a driver without directions and no way to reach dispatch. We built the company we wished had existed that morning: fewer cars, better vetted, and a concierge team that actually picks up.
+            </p>
+            <p style="margin-top:var(--space-5); line-height:var(--lh-relaxed);">
+              Twelve years later, that standard hasn't moved. We've simply gotten better at holding it — across more cities, more fleets, and more of the moments that can't afford to go wrong.
+            </p>
+            <a href="about.html" class="btn--ghost" style="margin-top:var(--space-6);">Read Our Full Story</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LUXURY EXPERIENCE ================= -->
+    <section style="position:relative; min-height:70vh; display:flex; align-items:center; overflow:hidden; background:var(--black);">
+      <div style="position:absolute; inset:0;">
+        <img src="https://images.unsplash.com/photo-1615563164538-89e1da13fcc4?q=80&w=2000&auto=format&fit=crop" alt="Chauffeur holding open the door of a luxury vehicle" data-parallax="0.12" loading="lazy" style="width:100%; height:132%; object-fit:cover; opacity:0.55;" />
+        <div style="position:absolute; inset:0; background:linear-gradient(90deg, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.55) 60%, rgba(10,10,10,0.3) 100%);"></div>
+      </div>
+      <div class="container" style="position:relative; z-index:1; color:var(--white);">
+        <div style="max-width:640px;" data-reveal>
+          <p class="eyebrow" style="color:var(--gold-light);">The Aureline Experience</p>
+          <h2 style="color:var(--white);">Silence, Comfort, and a Door Held Open</h2>
+          <p style="color:var(--gray-300); font-size:var(--fs-lg); margin-top:var(--space-5);">
+            Bottled water at the correct temperature. Climate set before you enter. A chauffeur who knows to wait, not to talk. Luxury, to us, is what you no longer have to ask for.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ PREVIEW ================= -->
+    <section class="section section--alt" aria-labelledby="faq-heading">
+      <div class="container container--narrow">
+        <div class="section-header section-header--center" data-reveal>
+          <p class="eyebrow">Frequently Asked</p>
+          <h2 id="faq-heading">Common Questions</h2>
+        </div>
+
+        <div class="accordion" data-reveal>
+          <div class="accordion-item">
+            <h3>
+              <button class="accordion-item__trigger" aria-expanded="true" aria-controls="faq-panel-1" id="faq-trigger-1">
+                How far in advance should I book?
+                <span class="accordion-item__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion-item__panel" id="faq-panel-1" data-open="true" role="region" aria-labelledby="faq-trigger-1">
+              <div class="accordion-item__panel-inner">
+                <p>Same-day requests are usually accommodated within two hours' notice, subject to availability. For events and multi-vehicle bookings, we recommend 5–7 days.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3>
+              <button class="accordion-item__trigger" aria-expanded="false" aria-controls="faq-panel-2" id="faq-trigger-2">
+                Do you track my flight for airport pickups?
+                <span class="accordion-item__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion-item__panel" id="faq-panel-2" data-open="false" role="region" aria-labelledby="faq-trigger-2">
+              <div class="accordion-item__panel-inner">
+                <p>Yes — every airport transfer is linked to your flight number. Your chauffeur adjusts arrival time automatically and waits complimentary for the first 60 minutes after landing.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3>
+              <button class="accordion-item__trigger" aria-expanded="false" aria-controls="faq-panel-3" id="faq-trigger-3">
+                Is pricing really fixed, with no surge?
+                <span class="accordion-item__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion-item__panel" id="faq-panel-3" data-open="false" role="region" aria-labelledby="faq-trigger-3">
+              <div class="accordion-item__panel-inner">
+                <p>Your fare is confirmed the moment you book and never changes for time of day, demand, or traffic. Tolls and gratuity are itemized separately and shown up front.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3>
+              <button class="accordion-item__trigger" aria-expanded="false" aria-controls="faq-panel-4" id="faq-trigger-4">
+                Can I set up a corporate account?
+                <span class="accordion-item__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion-item__panel" id="faq-panel-4" data-open="false" role="region" aria-labelledby="faq-trigger-4">
+              <div class="accordion-item__panel-inner">
+                <p>Yes — corporate accounts include centralized monthly billing, traveler profiles, and a dedicated account manager. See our Corporate Travel page for details.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top:var(--space-7);">
+          <a href="faq.html" class="btn btn--outline">View All Questions</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INSTAGRAM GALLERY ================= -->
+    <section class="section" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section-header section-header--center" data-reveal>
+          <p class="eyebrow">@aureline</p>
+          <h2 id="gallery-heading">Follow the Journey</h2>
+        </div>
+
+        <div class="gallery">
+          <a class="gallery__item" href="#" data-reveal><img src="https://images.unsplash.com/photo-1611448746128-7c39e03b71e4?q=80&w=500&auto=format&fit=crop" alt="Chauffeur beside a luxury vehicle" loading="lazy" /><span class="gallery__handle">@aureline</span></a>
+          <a class="gallery__item" href="#" data-reveal data-reveal-delay="1"><img src="https://images.unsplash.com/photo-1599912027667-755b68b4dd3b?q=80&w=500&auto=format&fit=crop" alt="Luxury car interior detail" loading="lazy" /><span class="gallery__handle">@aureline</span></a>
+          <a class="gallery__item" href="#" data-reveal data-reveal-delay="2"><img src="https://images.unsplash.com/photo-1596032457104-baa1f5f9372a?q=80&w=500&auto=format&fit=crop" alt="Chauffeur opening a car door" loading="lazy" /><span class="gallery__handle">@aureline</span></a>
+          <a class="gallery__item" href="#" data-reveal data-reveal-delay="3"><img src="https://images.unsplash.com/photo-1767749995450-7b63ab7cd4fd?q=80&w=500&auto=format&fit=crop" alt="Luxury SUV exterior" loading="lazy" /><span class="gallery__handle">@aureline</span></a>
+          <a class="gallery__item" href="#" data-reveal><img src="https://images.unsplash.com/photo-1687634366070-c06d3f037154?q=80&w=500&auto=format&fit=crop" alt="Leather seating detail" loading="lazy" /><span class="gallery__handle">@aureline</span></a>
+          <a class="gallery__item" href="#" data-reveal data-reveal-delay="1"><img src="https://images.unsplash.com/photo-1607642857266-88f5f03e66c6?q=80&w=500&auto=format&fit=crop" alt="Chauffeur in uniform" loading="lazy" /><span class="gallery__handle">@aureline</span></a>
+          <a class="gallery__item" href="#" data-reveal data-reveal-delay="2"><img src="https://images.unsplash.com/photo-1736572199225-e8dc0a233faf?q=80&w=500&auto=format&fit=crop" alt="Executive limousine exterior" loading="lazy" /><span class="gallery__handle">@aureline</span></a>
+          <a class="gallery__item" href="#" data-reveal data-reveal-delay="3"><img src="https://images.unsplash.com/photo-1627454819213-4b261f3c3b90?q=80&w=500&auto=format&fit=crop" alt="Luxury vehicle dashboard detail" loading="lazy" /><span class="gallery__handle">@aureline</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="section section--dark text-center" style="background:var(--charcoal); border-top:1px solid var(--color-border-dark);" aria-labelledby="cta-heading">
+      <div class="container container--narrow">
+        <p class="eyebrow" style="justify-content:center;" data-reveal>Ready When You Are</p>
+        <h2 id="cta-heading" data-reveal>Your Next Ride Should Feel Like This Too.</h2>
+        <p style="font-size:var(--fs-lg); margin:var(--space-6) auto var(--space-8);" data-reveal>
+          Reserve in under two minutes — no account required.
+        </p>
+        <div data-reveal>
+          <a href="contact.html" class="btn btn--primary btn--lg">Reserve Your Chauffeur</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo">AURELINE<span>.</span></a>
+          <p>Private chauffeur service for airport transfers, corporate travel, events, and hourly hire — in 40+ cities.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Aureline on Instagram">IG</a>
+            <a href="#" aria-label="Aureline on Facebook">FB</a>
+            <a href="#" aria-label="Aureline on X">X</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer__heading">Company</h3>
+          <div class="footer__links">
+            <a href="about.html">About</a>
+            <a href="fleet.html">Fleet</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer__heading">Services</h3>
+          <div class="footer__links">
+            <a href="airport-transfers.html">Airport Transfers</a>
+            <a href="corporate-travel.html">Corporate Travel</a>
+            <a href="events.html">Events</a>
+            <a href="hourly-chauffeur.html">Hourly Chauffeur</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer__heading">Support</h3>
+          <div class="footer__links">
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Booking Help</a>
+            <a href="tel:+18005551234">+1 (800) 555-1234</a>
+            <a href="mailto:concierge@aureline.example">concierge@aureline.example</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span id="current-year">2026</span> Aureline. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cancellation Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MOBILE STICKY CTA ================= -->
+  <div class="mobile-cta-bar">
+    <a href="contact.html" class="btn btn--primary">Book Now</a>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/animations.js" defer></script>
+  <script src="assets/js/components.js" defer></script>
+</body>
+</html>

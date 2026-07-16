@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact &amp; Book — Aureline Chauffeured Travel</title>
+  <meta name="description" content="Reserve your chauffeur, reach our 24/7 concierge team, or track an active ride — Aureline contact and booking." />
+  <link rel="canonical" href="contact.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="announcement-bar" role="note">
+    Complimentary first-ride upgrade with code <strong>ARRIVE</strong> — <a href="contact.html">Reserve now</a>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="index.html" class="nav__logo">AURELINE<span>.</span></a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav__links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="fleet.html">Fleet</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <div class="nav__links-extra">
+          <a href="tel:+18005551234">+1 (800) 555-1234</a>
+          <a href="#book" class="btn btn--primary">Book Now</a>
+        </div>
+      </div>
+      <div class="nav__actions">
+        <a href="tel:+18005551234" class="fs-sm">+1 (800) 555-1234</a>
+        <a href="#book" class="btn btn--dark btn--sm">Book Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section style="position:relative; min-height:44vh; display:flex; align-items:flex-end; overflow:hidden; background:var(--black);">
+      <div style="position:absolute; inset:0;">
+        <img src="https://images.unsplash.com/photo-1605702012553-e954fbde66eb?q=80&w=2000&auto=format&fit=crop" alt="City skyline at dusk" data-parallax="0.15" style="width:100%; height:132%; object-fit:cover; opacity:0.5;" />
+        <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(10,10,10,0.35) 0%, rgba(10,10,10,0.9) 100%);"></div>
+      </div>
+      <div class="container" style="position:relative; z-index:1; padding-top:var(--space-10); padding-bottom:var(--space-8); color:var(--white);">
+        <nav class="breadcrumb" aria-label="Breadcrumb" style="color:var(--gray-400); margin-bottom:var(--space-5);">
+          <a href="index.html" style="color:var(--gray-400);">Home</a>
+          <span class="breadcrumb__sep">/</span>
+          <span class="breadcrumb__current" style="color:var(--white);">Contact</span>
+        </nav>
+        <p class="eyebrow" style="color:var(--gold-light);">Contact &amp; Booking</p>
+        <h1 style="color:var(--white); max-width:18ch;">Reserve in Under Two Minutes</h1>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT INFO CARDS ================= -->
+    <section class="section--sm section--alt" aria-label="Contact information">
+      <div class="container">
+        <div class="grid grid--4">
+          <div class="card__body card" style="padding:var(--space-6);" data-reveal>
+            <h3 style="font-size:var(--fs-lg);">Call Us</h3>
+            <p style="margin-top:var(--space-2);"><a href="tel:+18005551234" style="text-decoration:underline;">+1 (800) 555-1234</a></p>
+            <p style="font-size:var(--fs-sm); margin-top:var(--space-1);">24/7 concierge line</p>
+          </div>
+          <div class="card__body card" style="padding:var(--space-6);" data-reveal data-reveal-delay="1">
+            <h3 style="font-size:var(--fs-lg);">Email Us</h3>
+            <p style="margin-top:var(--space-2);"><a href="mailto:concierge@aureline.example" style="text-decoration:underline;">concierge@aureline.example</a></p>
+            <p style="font-size:var(--fs-sm); margin-top:var(--space-1);">Response within 1 hour</p>
+          </div>
+          <div class="card__body card" style="padding:var(--space-6);" data-reveal data-reveal-delay="2">
+            <h3 style="font-size:var(--fs-lg);">Headquarters</h3>
+            <p style="margin-top:var(--space-2);">One Meridian Plaza, Suite 1400</p>
+            <p style="font-size:var(--fs-sm); margin-top:var(--space-1);">New York, NY 10004</p>
+          </div>
+          <div class="card__body card" style="padding:var(--space-6);" data-reveal data-reveal-delay="3">
+            <h3 style="font-size:var(--fs-lg);">Track a Ride</h3>
+            <p style="margin-top:var(--space-2);"><a href="#" style="text-decoration:underline;">Open tracking portal</a></p>
+            <p style="font-size:var(--fs-sm); margin-top:var(--space-1);">For active reservations</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BOOKING FORM ================= -->
+    <section class="section" id="book" aria-labelledby="book-heading">
+      <div class="container container--narrow">
+        <div class="section-header section-header--center" data-reveal>
+          <p class="eyebrow">Book Your Chauffeur</p>
+          <h2 id="book-heading">Tell Us Where You're Headed</h2>
+          <p>No account required — you'll receive a fixed quote and chauffeur details by email and text.</p>
+        </div>
+
+        <form data-validate data-reveal novalidate>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" required />
+            </div>
+            <div class="form-field">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-field">
+              <label for="phone">Contact Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 (___) ___-____" required />
+            </div>
+            <div class="form-field">
+              <label for="service-type">Service</label>
+              <select id="service-type" name="service-type">
+                <option>Airport Transfer</option>
+                <option>Corporate Travel</option>
+                <option>Event</option>
+                <option>Hourly Chauffeur</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="vehicle-class">Vehicle Class</label>
+              <select id="vehicle-class" name="vehicle-class">
+                <option>Business Sedan</option>
+                <option>Luxury SUV</option>
+                <option>Executive Limousine</option>
+                <option>Executive Sprinter</option>
+                <option>Stretch Limousine</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="pickup-date">Pickup Date</label>
+              <input type="date" id="pickup-date" name="pickup-date" required />
+            </div>
+            <div class="form-field">
+              <label for="pickup-time">Pickup Time</label>
+              <input type="time" id="pickup-time" name="pickup-time" required />
+            </div>
+            <div class="form-field form-field--full">
+              <label for="pickup-location">Pickup Location</label>
+              <input type="text" id="pickup-location" name="pickup-location" placeholder="Address or airport/flight number" required />
+            </div>
+            <div class="form-field form-field--full">
+              <label for="dropoff-location">Drop-off Location</label>
+              <input type="text" id="dropoff-location" name="dropoff-location" placeholder="Address" required />
+            </div>
+            <div class="form-field form-field--full">
+              <label for="notes">Additional Notes</label>
+              <textarea id="notes" name="notes" placeholder="Flight number, luggage count, special requests..."></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn--dark btn--lg" style="margin-top:var(--space-6);">Request Reservation</button>
+          <p class="form-note">By submitting, you agree to our Terms of Service and Privacy Policy.</p>
+          <p class="form-success" role="status">Thank you — your request has been received. A confirmation with your fixed fare will arrive by email shortly.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ================= MAP / COVERAGE ================= -->
+    <section class="section section--alt" aria-labelledby="coverage-heading">
+      <div class="container">
+        <div class="section-header section-header--center" data-reveal>
+          <p class="eyebrow">Coverage</p>
+          <h2 id="coverage-heading">Where We Operate</h2>
+        </div>
+        <div data-reveal style="border-radius:var(--radius-xl); overflow:hidden; aspect-ratio:21/8; background:var(--charcoal); display:flex; align-items:center; justify-content:center; color:var(--gray-400);">
+          <p style="font-size:var(--fs-sm); letter-spacing:var(--ls-wide); text-transform:uppercase;">Interactive coverage map placeholder</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo">AURELINE<span>.</span></a>
+          <p>Private chauffeur service for airport transfers, corporate travel, events, and hourly hire — in 40+ cities.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Aureline on Instagram">IG</a>
+            <a href="#" aria-label="Aureline on Facebook">FB</a>
+            <a href="#" aria-label="Aureline on X">X</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Company</h3>
+          <div class="footer__links">
+            <a href="about.html">About</a>
+            <a href="fleet.html">Fleet</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Services</h3>
+          <div class="footer__links">
+            <a href="airport-transfers.html">Airport Transfers</a>
+            <a href="corporate-travel.html">Corporate Travel</a>
+            <a href="events.html">Events</a>
+            <a href="hourly-chauffeur.html">Hourly Chauffeur</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Support</h3>
+          <div class="footer__links">
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Booking Help</a>
+            <a href="tel:+18005551234">+1 (800) 555-1234</a>
+            <a href="mailto:concierge@aureline.example">concierge@aureline.example</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="current-year">2026</span> Aureline. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cancellation Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/animations.js" defer></script>
+  <script src="assets/js/components.js" defer></script>
+</body>
+</html>
