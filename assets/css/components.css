@@ -53,12 +53,26 @@
   font-weight: 600;
   letter-spacing: var(--ls-tight);
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 2px;
+  flex-shrink: 0;
 }
 
 .nav__logo span {
   color: var(--gold);
+}
+
+/* Stacked DKCS lockup — height drives the size, width follows */
+.nav__logo img {
+  height: 56px;
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .nav__logo img {
+    height: 44px;
+  }
 }
 
 .nav__links {
@@ -1134,6 +1148,10 @@
 
 .footer__brand .nav__logo {
   color: var(--white);
+}
+
+.footer__brand .nav__logo img {
+  height: 72px;
 }
 
 .footer__brand p {
