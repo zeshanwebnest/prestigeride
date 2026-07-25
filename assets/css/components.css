@@ -500,8 +500,29 @@
   transform: scale(1.06);
 }
 
+/* Studio cutout vehicle shots sit on white and are never cropped */
+.fleet-card__media--vehicle {
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fleet-card__media--vehicle img {
+  object-fit: contain;
+  padding: var(--space-4);
+}
+
 .fleet-card__body {
   padding: var(--space-6);
+}
+
+.fleet-card__model {
+  margin-top: var(--space-2);
+  font-size: var(--fs-xs);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  color: var(--gold-light);
 }
 
 .fleet-card__meta {
